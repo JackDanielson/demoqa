@@ -1,0 +1,25 @@
+{
+  "name": "demoqa",
+  "version": "1.0.0",
+  "description": "Test Suite for www.demoqa.com",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackDanielson/demoqa.git"
+  },
+  "author": "Federico A. Danielo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackDanielson/demoqa/issues"
+  },
+  "homepage": "https://github.com/JackDanielson/demoqa#readme",
+  "devDependencies": {
+    "cypress": "^15.8.1"
+  },
+  "dependencies": {
+    "chai": "^6.2.2"
+  }
+}

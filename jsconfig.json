@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "commonjs",
+        "allowJs": true,
+        "checkJs": false,
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": false
+    },
+    "include": [
+        "cypress"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
