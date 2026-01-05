@@ -1,4 +1,4 @@
-class PracticeFormPage{
+class PracticeFormPage {
 
     getTxtFirstName(){
         return cy.get('#firstName')
@@ -29,14 +29,14 @@ class PracticeFormPage{
     }
 
     getCalDateOfBirth(){
-        return cy.get('#dateOfInputBirth')
+        return cy.get('#dateOfBirthInput') 
     }
 
     getTxtSubjects(){
         return cy.get('#subjectsInput')
     }
 
-    getCheckHobbiesSport(){
+    getCheckHobbiesSports(){
         return cy.get('#hobbies-checkbox-1')
     }
 
@@ -46,10 +46,6 @@ class PracticeFormPage{
 
     getCheckHobbiesMusic(){
         return cy.get('#hobbies-checkbox-3')
-    }
-
-    getTxtFileChosen(){
-        return cy.get('#form-file-label')
     }
 
     getBtnChooseFile(){
@@ -68,9 +64,34 @@ class PracticeFormPage{
         return cy.get('#city')
     }
 
-    checkRadio(radio) {
-        radio.click({ force: true });
+    getBtnSubmit(){
+        return cy.get('#submit')
     }
+
+   getModalTitle(){
+        return cy.get('.modal-title')
+    }
+
+    getModalTableRows(){
+        return cy.get('.table-responsive table tbody tr')
+    }
+
+    checkRadio(radio) {
+        radio.click({ force: true })
+    }
+
+    checkHobby(checkbox) {
+        checkbox.click({ force: true })
+    }
+
+    selectDate(dob) {
+        const [day, month, year] = dob.split('/')
+        this.getCalDateOfBirth().click()
+        cy.get('.react-datepicker__month-select').select(parseInt(month) - 1)
+        cy.get('.react-datepicker__year-select').select(year)
+        cy.get(`.react-datepicker__day--0${parseInt(day)}:not(.react-datepicker__day--outside-month)`).click()
+    }
+
 
 }
 
