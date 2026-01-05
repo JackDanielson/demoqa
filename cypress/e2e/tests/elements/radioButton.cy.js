@@ -1,7 +1,7 @@
 const { should } = require('chai');
 const RadioButtonPage = require('../../../pages/elements/RadioButtonPage');
 
-describe('Radio Button', () => {
+describe('Testing Radio Button', () => {
     beforeEach(() => {
         cy.visit('/radio-button')
     });

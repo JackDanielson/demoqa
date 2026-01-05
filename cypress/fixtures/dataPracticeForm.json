@@ -1,0 +1,24 @@
+{
+    "fullUser":{
+        "firstName": "Juan",
+        "lastName": "Reyes",
+        "email": "juanreyes@gmail.com.ar",
+        "gender": "Male",
+        "cellphone": "1234567890",
+        "dob": "5/5/1980",
+        "subjects": "None",
+        "hobbiesSports": true,
+        "hobbiesReading": true,
+        "hobbiesMusic": false,
+        "picture": "",
+        "currentAddress": "Calle Sin Numero, 131, Ciudad de Mendoza, Mendoza, Argentina",
+        "state": "",
+        "city": ""
+    },
+    "enoughDataUser":{
+        "firstName": "Juliana",
+        "lastName": "Alvarez",
+        "gender": "Female",
+        "cellphone": "1234567891"
+    }
+}
